@@ -1,0 +1,91 @@
+@import './visual-mode.css';
+@tailwind base;
+@import './vars.css';
+
+@tailwind components;
+@tailwind utilities;
+
+
+@import './_base.css';
+@import './_grid.css';
+@import './_fonts.css';
+@import './_typography.css';
+@import './animation.css';
+@import './tailwind/blocks/**/*.css';
+
+@layer base {
+  .cmp-container {
+    @apply bg-center bg-fill text-text;
+    background-blend-mode: var(--background-blend-mode, normal);
+    gap: var(--gap);
+    row-gap: var(--row-gap, var(--gap, 0));
+    column-gap: var(--column-gap, var(--gap, 0));
+    flex-direction: var(--flex-direction);
+    flex-grow: var(--flex-grow, 0);
+    flex-wrap: var(--flex-wrap, 0);
+    justify-content: var(--justify-content, 'flex-start');
+    align-items: var(--align-items);
+    padding: var(--padding, 0);
+    box-shadow: var(--box-shadow, none);
+    border-radius: var(--border-radius, none);
+  }
+}
+
+@layer base {
+  .button, .teaser {
+    --button-bg-color: var(--color-fill);
+    --button-bg-color-hover: var(--color-fill-hover);
+    --button-border-color: var(--color-fill);
+    --button-border-color-hover: var(--color-fill);
+    --button-text-color: var(--color-text);
+    --button-text-color-hover: var(--color-text-hover);
+    --button-padding: var(--padding-y, var(--padding, theme('padding.2'))) var(--padding-x, var(--padding, theme('padding.3')));
+    --button-rounded: var(--border-radius, theme('borderRadius.DEFAULT'));
+    --button-gap: ;
+    --button-leading: var(--line-height, theme('lineHeight.normal'));
+    --button-font-size: var(--font-size);
+    --button-font-weight: var(--font-weight, theme('fontWeight.semibold'));
+    --button-margin: var(--margin, theme('margin.0'));
+  }
+
+  [class*=teaser--action\:button] .cmp-teaser__action-link,
+  .cmp-form-button,
+  .cmp-button {
+    @apply relative inline-flex items-center space-x-4 text-center no-underline transition-all transform border shadow cursor-pointer bg-fill border-fill text-text;
+    margin: var(--button-margin);
+    line-height: var(--button-leading);
+    font-weight: var(--button-font-weight);
+    font-size: var(--button-font-size);
+    border-radius: var(--button-rounded);
+    padding: var(--button-padding);
+
+    @apply hover:shadow-none hover:bg-fill-hover hover:text-text-accent-hover hover:border-fill-hover;
+    @apply focus:shadow-none focus:bg-fill-hover focus:text-text-accent-hover focus:border-fill-hover focus:top-px;
+    @apply active:top-px;
+  }
+
+  .cmp-button__text {}
+  .cmp-button__icon {
+    @apply flex bg-text;
+    width: var(--button-font-size);
+    height: var(--button-font-size);
+    mask-size: cover;
+    margin: calc(var(--button-text-size) / 2) 0; 
+  }
+}
+
+@layer utilities {
+  .button--icon-position\:after .cmp-button { @apply inline-flex flex-row-reverse; }
+  .button--icon-position\:after .cmp-button .cmp-button__text { --tw-space-x-reverse: 1; }
+}
+
+@layer utilities {
+  [class*=button\:outline] .cmp-form-button,
+  [class*=button\:outline] .cmp-button {
+    @apply bg-transparent text-fill border-fill;
+    @apply hover:bg-fill-hover hover:text-text-hover hover:border-fill-hover;
+    @apply focus:bg-text-hover focus:text-text-hover focus:border-fill-hover;
+  }
+
+  [class*=button\:outline] .cmp-button__icon { @apply bg-fill; }
+}

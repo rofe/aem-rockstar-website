@@ -32,6 +32,9 @@ export default async function decorate(block) {
     nav.innerHTML = html;
     decorateIcons(nav);
 
+    nav.classList.add('w-full', 'py-2', 'mx-auto', 'max-w-screen-xl');
     block.append(nav);
+
+    block.classList.add('black', 'cmp-container');
   }
 }

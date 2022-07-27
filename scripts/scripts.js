@@ -586,6 +586,10 @@ document.addEventListener('click', () => sampleRUM('click'));
 
 loadPage(document);
 
+const htmlEl = document.querySelector('html');
+htmlEl.classList.add('flex-gap');
+htmlEl.classList.add('light');
+
 function loadHeader(header) {
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
@@ -605,6 +609,9 @@ function loadFooter(footer) {
  * @param {Element} main The main element
  */
 export function decorateMain(main) {
+  main.classList.add('container');
+  main.classList.add('max-w-full');
+
   // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);

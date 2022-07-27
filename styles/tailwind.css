@@ -1,3 +1,7 @@
+html:not(.light):not(.dark) {
+  background-color: rgb(255,255,255);
+}
+
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */
@@ -16,7 +20,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: var(--color-text);
   /* 2 */
 }
 
@@ -42,7 +46,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   /* 4 */
 }
 
@@ -417,6 +421,610 @@ video {
   height: auto;
 }
 
+[class*=icon--list] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+}
+
+[class*=icon--x] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+[class*=icon--arrow-up] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></svg>');
+}
+
+[class*=icon--arrow-right] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>');
+}
+
+[class*=icon--arrow-down] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+}
+
+[class*=icon--arrow-left] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></svg>');
+}
+
+[class*=icon--caret-up-fill] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/></svg>');
+}
+
+[class*=icon--caret-right-fill] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg>');
+}
+
+[class*=icon--caret-down-fill] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+}
+
+[class*=icon--caret-left-fill] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg>');
+}
+
+[class*=icon--chevron-up] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>');
+}
+
+[class*=icon--chevron-right] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+[class*=icon--chevron-down] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+[class*=icon--chevron-left] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+}
+
+[class*=icon--globe] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>');
+}
+
+[class*=icon--link] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">  <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>  <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">  <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>  <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/></svg>');
+}
+
+[class*=icon--link-45deg] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>');
+}
+
+[class*=icon--play-circle] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/></svg>');
+}
+
+[class*=icon--play-circle-fill] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/></svg>');
+}
+
+[class*=icon--plus] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+}
+
+[class*=icon--dash] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">  <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">  <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg>');
+}
+
+[class*=icon--search] {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+          mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+}
+
+.light {
+  --color-text: rgb(40,49,67);
+  --color-text-hover: rgb(21,26,35);
+  --color-text-muted: rgb(125,125,125);
+  --color-text-accent: rgb(225,225,225);
+  --color-text-accent-hover: rgb(246,248,244);
+  --color-fill: rgb(255,255,255);
+  --color-fill-hover: rgb(236,238,244);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-fill-accent: rgb(250, 15, 0);
+  --color-fill-accent-hover: rgb(255, 25, 5);
+}
+
+.light .primary {
+  --color-DEFAULT: rgb(66, 137, 236);
+  --color-inverted: rgb(235,235,235);
+  --color-hover: rgb(62, 119, 200);
+  --color-inverted-hover: rgb(255,255,255);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(235, 235, 235);
+  --color-text-accent-hover: rgb(255, 255, 255);
+  --color-fill: rgb(236, 16, 0);
+  --color-fill-hover: rgb(246, 21, 5);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-fill-accent: rgb(40, 49, 67);
+  --color-fill-accent-hover: rgb(29, 37, 50);
+}
+
+.light .secondary {
+  --color-DEFAULT: rgb(40,49,67);
+  --color-inverted: rgb(194,202,219);
+  --color-hover: rgb(21,26,35);
+  --color-inverted-hover: rgb(210,216,228);
+  --color-text: rgb(194, 202, 219);
+  --color-text-hover: rgb(210, 216, 228);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-fill: rgb(40, 49, 67);
+  --color-fill-hover: rgb(29, 37, 50);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-fill-accent: rgb(250, 15, 0);
+  --color-fill-accent-hover: rgb(255, 25, 5);
+}
+
+.light .success {
+  --color-DEFAULT: #22c55e;
+  --color-inverted: rgb(255,255,255);
+  --color-hover: #166534;
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(235, 235, 235);
+  --color-text-accent-hover: rgb(255, 255, 255);
+  --color-fill: #22c55e;
+  --color-fill-hover: #16a34a;
+  --color-fill-muted: #4ade80;
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .danger {
+  --color-DEFAULT: #ef4444;
+  --color-inverted: rgb(255,255,255);
+  --color-hover: #991b1b;
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(235, 235, 235);
+  --color-text-accent-hover: rgb(255, 255, 255);
+  --color-fill: #ef4444;
+  --color-fill-hover: #dc2626;
+  --color-fill-muted: #f87171;
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .warning {
+  --color-DEFAULT: #fef08a;
+  --color-inverted: rgb(30,30,30);
+  --color-hover: #facc15;
+  --color-inverted-hover: rgb(10,10,10);
+  --color-text: rgb(40,49,67);
+  --color-text-hover: rgb(21,26,35);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(40,49,67);
+  --color-text-accent-hover: rgb(21,26,35);
+  --color-fill: #fef08a;
+  --color-fill-hover: #facc15;
+  --color-fill-muted: #fef9c3;
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .info {
+  --color-DEFAULT: #c084fc;
+  --color-inverted: rgb(255,255,255);
+  --color-hover: #6b21a8;
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(235, 235, 235);
+  --color-text-accent-hover: rgb(255, 255, 255);
+  --color-fill: #a855f7;
+  --color-fill-hover: #9333ea;
+  --color-fill-muted: #c084fc;
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .light {
+  --color-DEFAULT: rgb(236, 238, 243);
+  --color-inverted: rgb(40,49,67);
+  --color-hover: rgb(204, 211, 224);
+  --color-inverted-hover: rgb(21,26,35);
+  --color-text: rgb(40,49,67);
+  --color-text-hover: rgb(21,26,35);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(40,49,67);
+  --color-text-accent-hover: rgb(21,26,35);
+  --color-fill: rgb(246, 249, 254);
+  --color-fill-hover: rgb(204, 211, 224);
+  --color-fill-muted: rgb(236, 238, 243);
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .dark {
+  --color-DEFAULT: rgb(37, 73, 123);
+  --color-inverted: rgb(250, 252, 255);
+  --color-hover: rgb(30, 64, 113);
+  --color-inverted-hover: rgb(255, 255, 255);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(235, 235, 235);
+  --color-text-accent-hover: rgb(255, 255, 255);
+  --color-fill: rgb(44,44,44);
+  --color-fill-hover: rgb(39,39,39);
+  --color-fill-muted: rgb(30, 64, 113);
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .link {
+  --color-DEFAULT: #2563eb;
+  --color-inverted: rgb(255,255,255);
+  --color-hover: #1e40af;
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(40,49,67);
+  --color-text-hover: rgb(56,60,69);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-text-accent: rgb(235, 235, 235);
+  --color-text-accent-hover: rgb(255, 255, 255);
+  --color-fill: rgb(37, 73, 123);
+  --color-fill-hover: rgb(30, 64, 113);
+  --color-fill-muted: rgb(30, 64, 113);
+  --color-fill-accent: rgb(40,49,67);
+  --color-fill-accent-hover: rgb(56,60,69);
+}
+
+.light .white {
+  --color-DEFAULT: white;
+  --color-inverted: rgb(21,26,35);
+  --color-hover: rgb(255,255,255);
+  --color-inverted-hover: rgb(2,2,3);
+  --color-text: rgb(40,49,67);
+  --color-text-hover: rgb(21,26,35);
+  --color-text-muted: rgb(125,125,125);
+  --color-text-accent: rgb(225,225,225);
+  --color-text-accent-hover: rgb(246,248,244);
+  --color-fill: rgb(255,255,255);
+  --color-fill-hover: rgb(236,238,244);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-fill-accent: rgb(250, 15, 0);
+  --color-fill-accent-hover: rgb(255, 25, 5);
+}
+
+.light .black {
+  --color-DEFAULT: rgb(30,30,30);
+  --color-inverted: rgb(255,255,255);
+  --color-hover: rgb(10,10,10);
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(225,225,225);
+  --color-text-hover: rgb(246,248,244);
+  --color-text-muted: rgb(205,205,205);
+  --color-text-accent: rgb(225,225,225);
+  --color-text-accent-hover: rgb(246,248,244);
+  --color-fill: rgb(10,19,37);
+  --color-fill-hover: rgb(8,15,31);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-fill-accent: rgb(66,137,236);
+  --color-fill-accent-hover: rgb(62,119,200);
+}
+
+.light .transparent {
+  --color-DEFAULT: transparent;
+  --color-inverted: transparent;
+  --color-hover: transparent;
+  --color-inverted-hover: transparent;
+  --color-fill: transparent;
+}
+
+.light .gray {
+  --color-50: #f9fafb;
+  --color-100: #f3f4f6;
+  --color-200: #e5e7eb;
+  --color-300: #d1d5db;
+  --color-400: #9ca3af;
+  --color-500: #6b7280;
+  --color-600: #4b5563;
+  --color-700: #374151;
+  --color-800: #1f2937;
+  --color-900: #111827;
+  --color-DEFAULT: #9ca3af;
+}
+
+.dark .primary {
+  --color-DEFAULT: rgb(66, 137, 236);
+  --color-inverted: rgb(235,235,235);
+  --color-hover: rgb(62, 119, 200);
+  --color-inverted-hover: rgb(255,255,255);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-fill: rgb(66, 137, 236);
+  --color-fill-hover: rgb(62, 119, 200);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-accent: rgb(40,49,67);
+  --color-accent-hover: rgb(56,60,69);
+}
+
+.dark .secondary {
+  --color-DEFAULT: rgb(40,49,67);
+  --color-inverted: rgb(194,202,219);
+  --color-hover: rgb(21,26,35);
+  --color-inverted-hover: rgb(210,216,228);
+  --color-text: rgb(194, 202, 219);
+  --color-text-hover: rgb(210, 216, 228);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-fill: rgb(40, 49, 67);
+  --color-fill-hover: rgb(29, 37, 50);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-accent: rgb(66, 137, 236);
+  --color-accent-hover: rgb(62, 119, 200);
+}
+
+.dark .info {
+  --color-DEFAULT: #c084fc;
+  --color-inverted: rgb(255,255,255);
+  --color-hover: #6b21a8;
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(235, 235, 235);
+  --color-text-hover: rgb(255, 255, 255);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-fill: #a855f7;
+  --color-fill-hover: #9333ea;
+  --color-fill-muted: #c084fc;
+  --color-accent: rgb(40,49,67);
+  --color-accent-hover: rgb(56,60,69);
+}
+
+.dark .light {
+  --color-DEFAULT: rgb(236, 238, 243);
+  --color-inverted: rgb(40,49,67);
+  --color-hover: rgb(204, 211, 224);
+  --color-inverted-hover: rgb(21,26,35);
+  --color-text: rgb(194, 202, 219);
+  --color-text-hover: rgb(210, 216, 228);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-fill: rgb(18, 28, 48);
+  --color-fill-hover: rgb(27, 38, 60);
+  --color-fill-muted: rgb(19, 28, 45);
+  --color-accent: rgb(66, 137, 236);
+  --color-accent-hover: rgb(62, 119, 200);
+}
+
+.dark .link {
+  --color-DEFAULT: #2563eb;
+  --color-inverted: rgb(255,255,255);
+  --color-hover: #1e40af;
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(40,49,67);
+  --color-text-hover: rgb(56,60,69);
+  --color-text-muted: rgb(121, 164, 224);
+  --color-fill: rgb(37, 73, 123);
+  --color-fill-hover: rgb(30, 64, 113);
+  --color-fill-muted: rgb(30, 64, 113);
+  --color-accent: rgb(40,49,67);
+  --color-accent-hover: rgb(56,60,69);
+}
+
+.dark .black {
+  --color-DEFAULT: rgb(30,30,30);
+  --color-inverted: rgb(255,255,255);
+  --color-hover: rgb(10,10,10);
+  --color-inverted-hover: rgb(235,235,235);
+  --color-text: rgb(225,225,225);
+  --color-text-hover: rgb(246,248,244);
+  --color-text-muted: rgb(205,205,205);
+  --color-text-accent: rgb(225,225,225);
+  --color-text-accent-hover: rgb(246,248,244);
+  --color-fill: rgb(10,19,37);
+  --color-fill-hover: rgb(8,15,31);
+  --color-fill-muted: rgb(121, 164, 224);
+  --color-fill-accent: rgb(66,137,236);
+  --color-fill-accent-hover: rgb(62,119,200);
+}
+
+.dark .transparent {
+  --color-DEFAULT: transparent;
+  --color-inverted: transparent;
+  --color-hover: transparent;
+  --color-inverted-hover: transparent;
+}
+
+.transparent .DEFAULT {
+  --color-0: t;
+  --color-1: r;
+  --color-2: a;
+  --color-3: n;
+  --color-4: s;
+  --color-5: p;
+  --color-6: a;
+  --color-7: r;
+  --color-8: e;
+  --color-9: n;
+  --color-10: t;
+}
+
+.transparent .inverted {
+  --color-0: t;
+  --color-1: r;
+  --color-2: a;
+  --color-3: n;
+  --color-4: s;
+  --color-5: p;
+  --color-6: a;
+  --color-7: r;
+  --color-8: e;
+  --color-9: n;
+  --color-10: t;
+}
+
+.transparent .hover {
+  --color-0: t;
+  --color-1: r;
+  --color-2: a;
+  --color-3: n;
+  --color-4: s;
+  --color-5: p;
+  --color-6: a;
+  --color-7: r;
+  --color-8: e;
+  --color-9: n;
+  --color-10: t;
+}
+
+.transparent .inverted-hover {
+  --color-0: t;
+  --color-1: r;
+  --color-2: a;
+  --color-3: n;
+  --color-4: s;
+  --color-5: p;
+  --color-6: a;
+  --color-7: r;
+  --color-8: e;
+  --color-9: n;
+  --color-10: t;
+}
+
+.cmp-container {
+  background-color: var(--color-fill);
+  background-position: center;
+  color: var(--color-text);
+  background-blend-mode: var(--background-blend-mode, normal);
+  gap: var(--gap);
+  row-gap: var(--row-gap, var(--gap, 0));
+  -moz-column-gap: var(--column-gap, var(--gap, 0));
+       column-gap: var(--column-gap, var(--gap, 0));
+  flex-direction: var(--flex-direction);
+  flex-grow: var(--flex-grow, 0);
+  flex-wrap: var(--flex-wrap, 0);
+  justify-content: var(--justify-content, 'flex-start');
+  align-items: var(--align-items);
+  padding: var(--padding, 0);
+  box-shadow: var(--box-shadow, none);
+  border-radius: var(--border-radius, none);
+}
+
+.button, .teaser {
+  --button-bg-color: var(--color-fill);
+  --button-bg-color-hover: var(--color-fill-hover);
+  --button-border-color: var(--color-fill);
+  --button-border-color-hover: var(--color-fill);
+  --button-text-color: var(--color-text);
+  --button-text-color-hover: var(--color-text-hover);
+  --button-padding: var(--padding-y, var(--padding, 0.5rem)) var(--padding-x, var(--padding, 0.75rem));
+  --button-rounded: var(--border-radius, 0.25rem);
+  --button-gap: ;
+  --button-leading: var(--line-height, 1.5);
+  --button-font-size: var(--font-size);
+  --button-font-weight: var(--font-weight, 600);
+  --button-margin: var(--margin, 0px);
+}
+
+[class*=teaser--action\:button] .cmp-teaser__action-link, 
+  .cmp-form-button, 
+  .cmp-button {
+  position: relative;
+  display: inline-flex;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  align-items: center;
+}
+
+[class*=teaser--action\:button] .cmp-teaser__action-link > :not([hidden]) ~ :not([hidden]), 
+  .cmp-form-button > :not([hidden]) ~ :not([hidden]), 
+  .cmp-button > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+[class*=teaser--action\:button] .cmp-teaser__action-link, 
+  .cmp-form-button, 
+  .cmp-button {
+  border-width: 1px;
+  border-color: var(--color-fill);
+  background-color: var(--color-fill);
+  text-align: center;
+  color: var(--color-text);
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  margin: var(--button-margin);
+  line-height: var(--button-leading);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  border-radius: var(--button-rounded);
+  padding: var(--button-padding);
+}
+
+[class*=teaser--action\:button] .cmp-teaser__action-link:hover, 
+  .cmp-form-button:hover, 
+  .cmp-button:hover {
+  border-color: var(--color-fill-hover);
+  background-color: var(--color-fill-hover);
+  color: var(--color-text-accent-hover);
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+[class*=teaser--action\:button] .cmp-teaser__action-link:focus, 
+  .cmp-form-button:focus, 
+  .cmp-button:focus {
+  top: 1px;
+  border-color: var(--color-fill-hover);
+  background-color: var(--color-fill-hover);
+  color: var(--color-text-accent-hover);
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+[class*=teaser--action\:button] .cmp-teaser__action-link:active, 
+  .cmp-form-button:active, 
+  .cmp-button:active {
+  top: 1px;
+}
+
+.cmp-button__text {
+}
+
+.cmp-button__icon {
+  display: flex;
+  background-color: var(--color-text);
+  width: var(--button-font-size);
+  height: var(--button-font-size);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  margin: calc(var(--button-text-size) / 2) 0;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -439,7 +1047,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(147 197 253 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -486,7 +1094,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(147 197 253 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -533,7 +1141,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(147 197 253 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -558,46 +1166,17 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .block {
@@ -616,10 +1195,78 @@ video {
   display: table;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
 .resize {
   resize: both;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .border {
   border-width: 1px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text {
+  color: var(--color-text);
+}
+
+.button--icon-position\:after .cmp-button {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.button--icon-position\:after .cmp-button .cmp-button__text {
+  --tw-space-x-reverse: 1;
+}
+
+[class*=button\:outline] .cmp-form-button, 
+  [class*=button\:outline] .cmp-button {
+  border-color: var(--color-fill);
+  background-color: transparent;
+  color: var(--color-fill);
+}
+
+[class*=button\:outline] .cmp-form-button:hover, 
+  [class*=button\:outline] .cmp-button:hover {
+  border-color: var(--color-fill-hover);
+  background-color: var(--color-fill-hover);
+  color: var(--color-text-hover);
+}
+
+[class*=button\:outline] .cmp-form-button:focus, 
+  [class*=button\:outline] .cmp-button:focus {
+  border-color: var(--color-fill-hover);
+  background-color: var(--color-text-hover);
+  color: var(--color-text-hover);
+}
+
+[class*=button\:outline] .cmp-button__icon {
+  background-color: var(--color-fill);
 }
